@@ -1,0 +1,161 @@
+/*Global*/
+
+body {
+  background: #202020;
+  color: white;
+}
+
+.caja {
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/*Traductor*/
+
+form {
+  display: list-item;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.label-traductor {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px #aaa;
+  text-align: center;
+  display: block;
+  margin: 20px;
+}
+
+textarea {
+  width: 30%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+}
+
+textarea:disabled {
+  background-color: #aaa;
+}
+
+.separator {
+  width: 80%;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin: 20px auto 50px;
+}
+
+/*Variador de imágen*/
+
+input[type="file"] {
+  display: none;
+}
+
+.file-input {
+  width: 30%;
+  border-radius: 10px;
+  border: 2px solid #333;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px auto;
+  color: #fff;
+}
+
+.file-input:before {
+  content: "Elegir imágen (.png) con mismas dimensiones";
+}
+
+.file-input:hover {
+  background-color: #3e8e41;
+  color: #fff;
+}
+
+.label-img {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e7e5e5;
+  text-shadow: 1px 1px #aaa;
+  text-align: center;
+  margin: 10px;
+  background-color: #4b4a4a;
+}
+
+.label-img-name {
+  font-size: 20px;
+  color: #e7e5e5;
+  text-shadow: 1px 1px #aaa;
+  text-align: center;
+  margin: 10px;
+}
+
+input[type="number"] {
+  text-align: center;
+  background-color: #202020;
+  color: #e7e5e5;
+  border-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px #aaa;
+  margin: 10px;
+}
+
+.label-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e7e5e5;
+  text-shadow: 1px 1px #aaa;
+  text-align: center;
+  margin: 10px;
+}
+
+.show-img {
+  justify-content: center;
+  align-items: center;
+}
+
+td {
+  width: 20%;
+  height: auto;
+  text-align: center;
+}
+
+td img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 20px;
+}
+
+td img[src=""] {
+  border: none;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  textarea {
+      width: 80%;
+  }
+
+  .file-input {
+      width: 80%;
+  }
+
+  .label-number {
+      width: 80%;
+  }
+
+  td {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+}
